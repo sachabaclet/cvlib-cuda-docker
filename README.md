@@ -13,7 +13,7 @@ The Dockerfile is based on a modification of [opencv-cuda-docker by Julian Aßma
 
 - Latest [NVIDIA GPU drivers](https://docs.nvidia.com/datacenter/tesla/tesla-installation-notes/index.html) (v.510 at the time of writing)
 - [Docker Engine](https://docs.docker.com/engine/install/)
-- [NVIDIA Docker](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#docker)
+- [NVIDIA Container Runtime / nvidia-docker2](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#docker)
 
 Note: You will also need some available storage (more than 30GB is recommended).
 
