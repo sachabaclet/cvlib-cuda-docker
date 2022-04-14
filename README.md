@@ -1,10 +1,13 @@
 # Tensorflow, OpenCV, cvlib with CUDA Docker image
 
-A Dockerfile to build a Docker image with [Tensorflow](https://github.com/tensorflow/tensorflow) and [OpenCV](https://github.com/opencv/opencv) both compiled with NVIDIA CUDA support, with Python 3 bindings, as well as [cvlib](https://github.com/arunponnusamy/cvlib), a high-level and easy-to-use Computer Vision library for Python. 
-The [opencv-contrib](https://github.com/opencv/opencv_contrib) modules are included.
+A Dockerfile to build a Docker image which includes:
+- [Tensorflow](https://github.com/tensorflow/tensorflow) with CUDA support,
+- [OpenCV](https://github.com/opencv/opencv) with CUDA support, cuDNN support and Python 3 bindings,
+- [opencv-contrib](https://github.com/opencv/opencv_contrib),
+- [cvlib](https://github.com/arunponnusamy/cvlib), a high-level and easy-to-use Computer Vision library for Python. 
 This image is based on the [official NVIDIA Tensorflow Docker image](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/tensorflow).
 
-This work is based on [opencv-cuda-docker by Julian Aßmann](https://github.com/JulianAssmann/opencv-cuda-docker).
+The Dockerfile is based on a modification of [opencv-cuda-docker by Julian Aßmann](https://github.com/JulianAssmann/opencv-cuda-docker).
 
 ## Pre-requisites
 
@@ -21,7 +24,7 @@ cd <Dockerfile_directory/>
 sudo docker build -t cvlib_cuda .
 ```
 
-This may take several hours depending on your specs.  
+This may take one to several hours depending on your specs.  
 Multiple warnings may pop up during the compilation of OpenCV.
 
 ## How to run
