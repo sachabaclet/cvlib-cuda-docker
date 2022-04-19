@@ -32,3 +32,16 @@ Multiple warnings may pop up during the compilation of OpenCV.
 ```bash
 sudo docker run --gpus all -it cvlib_cuda
 ```
+
+Or, if you want the correct time to be reported in the container (tested on Ubuntu 18.04):
+```bash
+sudo docker run -it --gpus all \
+	-v /etc/timezone:/etc/timezone:ro \
+	-v /etc/localtime:/etc/localtime:ro \
+	cvlib_cuda
+```
+
+## How to update
+If you wish to change/update the version of Tensorflow used in this image, you may change the version of the base image (line 1 of the Dockerfile).
+
+If you wish to change/update the version of OpenCV used in this image, you may change the version specified after <code>ARG OPENCV_VERSION="</code>.
