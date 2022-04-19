@@ -30,7 +30,7 @@ Multiple warnings may pop up during the compilation of OpenCV.
 ## How to run
 
 ```bash
-sudo docker run --gpus all -it cvlib_cuda
+sudo docker run -it --gpus all cvlib_cuda
 ```
 
 Or, if you want the correct time to be reported in the container (tested on Ubuntu 18.04):
