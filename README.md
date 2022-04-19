@@ -44,6 +44,6 @@ sudo docker run -it --gpus all \
 ## How to update
 If you wish to change/update the version of Tensorflow used in this image, you may change the version of the base image (line 1 of the Dockerfile).
 
-If you wish to change/update the version of OpenCV used in this image, you may change the version specified after <code>ARG OPENCV_VERSION="</code>.
+If you wish to change/update the version of OpenCV used in this image, you may change the version specified after <code>ARG OPENCV_VERSION=</code>.
 
 You may then re-build the image.
